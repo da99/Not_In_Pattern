@@ -10,10 +10,6 @@ rescue Bundler::BundlerError => e
 end
 require 'bacon'
 
-Gem_Dir = File.expand_path( File.join(File.dirname(__FILE__) + '/../..') )
-$LOAD_PATH.unshift Gem_Dir
-$LOAD_PATH.unshift( Gem_Dir + "/lib" )
-
 Bacon.summary_on_exit
 
 require 'Not_In_Pattern'
